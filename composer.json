@@ -1,0 +1,53 @@
+{
+    "name": "aprchen/webscoket-server",
+    "description": "websocket",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "ott321",
+            "email": "ott321@yeah.net"
+        }
+    ],
+    "require": {
+        "swoft/console": "dev-master",
+        "swoft/http-message": "dev-master",
+        "swoft/framework": "dev-master",
+        "swoft/http-server": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Swoft\\Websocket\\Server\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SwoftTest\\Websocket\\": "test/Cases"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/swoft-cloud/framework"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/swoft-cloud/swoft-console"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/swoft-cloud/swoft-http-message"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    ],
+    "require-dev": {
+        "eaglewu/swoole-ide-helper": "dev-master",
+        "phpunit/phpunit": "^5.7"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit -c phpunit.xml"
+    }
+}
