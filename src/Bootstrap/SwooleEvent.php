@@ -12,11 +12,11 @@ namespace Swoft\Websocket\Server\Bootstrap;
 class SwooleEvent extends \Swoft\Bootstrap\SwooleEvent
 {
     /**
-     * 自定义握手过程使用,使用后不触发 onPen
+     * 自定义握手过程使用,使用后不触发 open
      */
     const ON_HAND_SHAKE = "handshake";
 
-    const ON_OPEN = "onOpen";
+    const ON_OPEN = "open";
 
-    const ON_MESSAGE = "onMessage";
+    const ON_MESSAGE = "message";
 }
